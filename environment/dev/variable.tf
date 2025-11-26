@@ -27,7 +27,16 @@ variable "kv" {
   type = map(any)
 }
 variable "st" {
-  type = map(any)
+  type = map(object({
+  stname                     = string
+  resource_group_name      =string
+  account_tier             = string
+  account_replication_type = string
+
+  })
+  
+
+  )
 }
 
 variable "nic" {

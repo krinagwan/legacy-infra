@@ -47,6 +47,7 @@ module "mst" {
   source = "../module/storage"
   st=var.st
   tags = local.common_tags
+  location  =local.common_location
 }
 
 # module "mbas" {
