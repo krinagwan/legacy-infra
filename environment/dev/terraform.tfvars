@@ -2,9 +2,21 @@ rg = {
   rg1 = {
     resource_group_name = "dev-rg-0001"
     location            = "West europe"
-    tags = {
-      environment = "staging"
-    }
+    # tags = {
+    #   environment = "staging"
+    # }
+  }
+
+
+}
+
+re={
+ rg2 = {
+    resource_group_name = "dev-rg-0002"
+    # location            = "West europe"
+    # tags = {
+    #   environment = "staging"
+    # }
   }
 }
 

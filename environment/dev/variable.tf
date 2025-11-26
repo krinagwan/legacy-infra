@@ -1,6 +1,18 @@
 variable "rg" {
-  type = map(any)
+  type = map(object({
+    resource_group_name = string
+    location            = string
+  }))
 }
+
+
+variable "re" {
+  type = map(object({
+    resource_group_name = string
+ 
+  }))
+}
+
 
 variable "vnet" {
   type = map(any)
@@ -19,7 +31,7 @@ variable "st" {
 }
 
 variable "nic" {
-  
+
 }
 variable "bas" {
 
@@ -31,9 +43,11 @@ variable "acr" {
 
 }
 variable "aks" {
-  
+
 }
 variable "sqldb" {}
 
 
 variable "sqlserver" {}
+
+
